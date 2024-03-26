@@ -34,7 +34,7 @@ color = 'My favorite color is %s, what is yours?' % blue
 print(color)
 
 #7 done
-color = 'My favorite color is {}, what is yours?'.format("yellow")
+color = 'My favorite color is {}, what is yours?'.format('yellow')
 print(color)
 
 #8 done
@@ -48,9 +48,12 @@ schools = ['harris', 'booth', 'crown', 'harris', 'harris']
 schools_unique = list(set(schools))
 print(schools_unique)
 
-#10 change the 'dog' entry to 'cat'
+#10 change the 'dog' entry to 'cat' (done)
 animals = tuple(['bird', 'horse', 'dog', 'fish'])
-
+animals_edit = list(animals)
+animals_edit[2] = 'cat'
+animals = tuple(animals_edit)
+print(animals)
 #11 separate the words in this string into entries in a list, with only lower-case
 #letters, e.g. ['i', 'love', 'how', ...
 my_sent = 'All that snow we had this winter sure was fun!'
