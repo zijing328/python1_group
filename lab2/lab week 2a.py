@@ -8,25 +8,26 @@ x = 10
 y = 20
 print(x + y)
 
-#2 
+#2 done
 my_list = [40, 50, 60, 70, 80, 100, 200, 400]
 my_list_len = len(my_list)
-print(my_list[my_list_len-1])
+print(my_list[my_list_len - 1])
 
-#3
+#3 done
 my_string = 'hello world'
-print(my_string.upper)
+print(my_string.upper())
 
-#4
+#4 done
 z = ['a', 'b', 'c']
-z[3] = 'd'
+z += 'd'
 
 #5 run all these lines at once. why does the x not display 10, 
 #followed by the 200?  Fix it so it does.
 x = 10
-x
+print(x)
 y = 20
 print(x * y)
+# 
 
 #6
 color = 'My favorite color is {}, what is yours?' % blue
