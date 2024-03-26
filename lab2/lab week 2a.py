@@ -22,23 +22,23 @@ z = ['a', 'b', 'c']
 z += 'd'
 
 #5 run all these lines at once. why does the x not display 10, 
-#followed by the 200?  Fix it so it does.
+#followed by the 200?  Fix it so it does.(done)
 x = 10
 print(x)
 y = 20
 print(x * y)
 # 
 
-#6
-color = 'My favorite color is {}, what is yours?' % blue
+#6 done
+color = 'My favorite color is %s, what is yours?' % blue
 print(color)
 
-#7
-color = 'My favorite color is {}, what is yours?'.format(yellow)
+#7 done
+color = 'My favorite color is {}, what is yours?'.format("yellow")
 print(color)
 
-#8
-color = f'My favorite color is {red}, what is yours?'
+#8 done
+color = f'My favorite color is {'red'}, what is yours?'
 print(color)
 
 #### answer the following questions by adding lines, but without changing the code given
