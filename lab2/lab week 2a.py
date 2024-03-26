@@ -43,8 +43,10 @@ print(color)
 
 #### answer the following questions by adding lines, but without changing the code given
 
-#9 make the entries in this list unique
+#9 make the entries in this list unique (done)
 schools = ['harris', 'booth', 'crown', 'harris', 'harris']
+schools_unique = list(set(schools))
+print(schools_unique)
 
 #10 change the 'dog' entry to 'cat'
 animals = tuple(['bird', 'horse', 'dog', 'fish'])
