@@ -22,7 +22,7 @@ z = ['a', 'b', 'c']
 z += 'd'
 
 #5 run all these lines at once. why does the x not display 10, 
-#followed by the 200?  Fix it so it does.
+#followed by the 200?  Fix it so it does. (done)
 x = 10
 print(x)
 y = 20
@@ -31,12 +31,11 @@ print(x * y)
 
 #6 done
 color_name = 'blue'
-color_string = f'My favorite color is {color_name}, what is yours?'
+color_string = f'My favorite color is {}, what is yours?' % color_name
 print(color_string)
 
 #7 done
-yellow = 'yellow'
-color = 'My favorite color is {}, what is yours?'.format(yellow)
+color = 'My favorite color is {}, what is yours?'.format('yellow')
 print(color)
 
 #8 done
@@ -52,12 +51,12 @@ schools = {'harris', 'booth', 'crown', 'harris', 'harris'}
 print(schools)
 
 
-#10 done 
-# change the 'dog' entry to 'cat'
+#10 change the 'dog' entry to 'cat' (done)
 animals = tuple(['bird', 'horse', 'dog', 'fish'])
-animals_list = list(animals)
-animals_list[2] = 'cat'
-print(animals_list)
+animals_edit = list(animals)
+animals_edit[2] = 'cat'
+animals = tuple(animals_edit)
+print(animals)
 
 #11 separate the words in this string into entries in a list, with only lower-case
 #letters, e.g. ['i', 'love', 'how', ... done
