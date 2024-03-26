@@ -31,7 +31,7 @@ print(x * y)
 
 #6 done
 color_name = 'blue'
-color_string = f'My favorite color is {}, what is yours?' % color_name
+color_string = f'My favorite color is {color_name}, what is yours?' 
 print(color_string)
 
 #7 done
