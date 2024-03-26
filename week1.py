@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Mar 21 10:27:55 2024
+Created on Thu Mar 21 10:31:54 2024
 
-@author: zhaozijing
+@author: crystal
 """
+x = 10
+y = 20
+x + y
 
-for i in range(10)
-    print(i)
