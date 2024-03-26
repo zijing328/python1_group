@@ -30,8 +30,9 @@ print(x * y)
 # 
 
 #6
-color = 'My favorite color is {}, what is yours?' % blue
-print(color)
+color_name = 'blue'
+color_string = f'My favorite color is {}, what is yours?' % color_name
+print(color_string)
 
 #7
 color = 'My favorite color is {}, what is yours?'.format(yellow)
@@ -43,11 +44,15 @@ print(color)
 
 #### answer the following questions by adding lines, but without changing the code given
 
-#9 make the entries in this list unique
-schools = ['harris', 'booth', 'crown', 'harris', 'harris']
+#9 done 
+# make the entries in this list unique
+schools = {'harris', 'booth', 'crown', 'harris', 'harris'}
+print(schools)
+
 
 #10 change the 'dog' entry to 'cat'
 animals = tuple(['bird', 'horse', 'dog', 'fish'])
+
 
 #11 separate the words in this string into entries in a list, with only lower-case
 #letters, e.g. ['i', 'love', 'how', ...
