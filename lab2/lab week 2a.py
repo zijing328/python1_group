@@ -51,9 +51,12 @@ schools = {'harris', 'booth', 'crown', 'harris', 'harris'}
 print(schools)
 
 
-#10 change the 'dog' entry to 'cat'
+#10 done 
+# change the 'dog' entry to 'cat'
 animals = tuple(['bird', 'horse', 'dog', 'fish'])
-
+animals_list = list(animals)
+animals_list[2] = 'cat'
+print(animals_list)
 
 #11 separate the words in this string into entries in a list, with only lower-case
 #letters, e.g. ['i', 'love', 'how', ... done
