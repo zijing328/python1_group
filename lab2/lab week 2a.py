@@ -37,9 +37,10 @@ print(color)
 color = 'My favorite color is {}, what is yours?'.format(yellow)
 print(color)
 
-#8
-color = f'My favorite color is {red}, what is yours?'
-print(color)
+#8 done
+color = 'red'
+my_string_color = f'My favorite color is {color}, what is yours?'
+print(my_string_color)
 
 #### answer the following questions by adding lines, but without changing the code given
 
@@ -50,5 +51,7 @@ schools = ['harris', 'booth', 'crown', 'harris', 'harris']
 animals = tuple(['bird', 'horse', 'dog', 'fish'])
 
 #11 separate the words in this string into entries in a list, with only lower-case
-#letters, e.g. ['i', 'love', 'how', ...
+#letters, e.g. ['i', 'love', 'how', ... done
 my_sent = 'All that snow we had this winter sure was fun!'
+word_list = my_sent.lower().split()
+print(word_list)
