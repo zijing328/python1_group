@@ -1,4 +1,4 @@
-#NAMES
+# Name: Yufei Liu
 #Unless otherwise noted, try solving these using class content and without searching online
 
 #1
@@ -8,11 +8,16 @@ i = 0
 while i < 10:
     if i < 5:
         print('little')
-    elif i >= 5:
+    elif i == 5:
+        i += 1
+        continue
+    elif i > 5:
         print('big')
     else:
         print('what happened?')
-    print('Finished!')
+    
+    if i != 5:
+        print('Finished!')
     i += 1
 
 #2
@@ -23,7 +28,11 @@ while i < 10:
 #1 2
 #1 2 3
 #1 2 3 4
-    
+
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(j, end=' ')
+    print()  
 
 #3
 start_list = [[2, 3, 4], [6, 8, 9]]
@@ -32,6 +41,16 @@ start_list = [[2, 3, 4], [6, 8, 9]]
 #HINTS: There are three steps here: mapping, filtering, and flattening the nested lists
 #       Try doing this in a for-loop, then try doing it in a list comprehension
 #       You may need to check StackOverflow for how to flatten a nested list
+
+end_list = []
+for i in range(0, 2):
+    for n in start_list[i]:
+        if n % 2 == 0:
+            n = n // 2
+            end_list.append(n)      
+print(end_list)
+
+end_list_comprehension = [n/2 if n % 2 == 0 else " " for i in range(0,2) for n in start_list[i]]
 
 #4
 import datetime
@@ -43,3 +62,14 @@ start_dict = {'noah': '2/23/1999',
 #              'Zach': datetime.datetime(2005, 8, 8)}
 #HINTS: The datetime library has a function that turns strings of the right format into dates
 #       Again, start with a for-loop, but make a dictionary comprehension in the end
+
+end_dict = {}
+for key, val in start_dict.items():
+    date_obj = dt.datetime.strptime(val, '%m/%d/%Y')
+    formatted_date = (date_obj.year, date_obj.month, date_obj.day)
+    end_dict[key.capitalize()] = formatted_date
+print(end_dict)
+
+
+   
+
