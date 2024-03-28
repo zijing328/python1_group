@@ -1,4 +1,4 @@
-# Name: Yufei Liu
+# Name: Yufei Liu, Zijing Zhao, You Li
 #Unless otherwise noted, try solving these using class content and without searching online
 
 #1
